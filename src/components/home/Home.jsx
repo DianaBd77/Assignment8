@@ -15,7 +15,7 @@ const Home = () => {
           <p className="first-heading">Give Someone</p>
           <p className="second-heading">a bit of summer</p>
         </div>
-        <img className="header-pic" src={headerPic} alt="coffee"></img>
+        <img className="header-pic" src={headerPic} alt="summer"></img>
       </div>
       <div className="card-container">
         <Card
