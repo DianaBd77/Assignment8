@@ -6,15 +6,19 @@ import sunflower from "./pic/sunflower.jpg";
 import orchid from "./pic/orchid.jpg";
 import cactus from "./pic/cactus.jpg";
 import headerPic from "./pic/header.jpg";
+import { useNavigate } from "react-router-dom";
+
 
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="home">
       <div className="home-header">
         <div className="text">
-          <h1>Give Someone</h1>
-          <h2>a bit of summer</h2>
+          <p className="first-heading">Give Someone</p>
+          <p className="second-heading">a bit of summer</p>
         </div>
         <img className="header-pic" src={headerPic} alt="coffee"></img>
       </div>
@@ -25,14 +29,15 @@ const Home = () => {
             "Helianthus is a genus comprising about 70 species of annual and perennial..."
           }
           img={sunflower}
+          alt={"sunflower"}
         />
         <Card
-          className="orchid"
           title={"ORCHID"}
           description={
             "Orchidaceae is a diverse and widespread family of flowering plants..."
           }
           img={orchid}
+          alt={"orchid"}
         />
         <Card
           title={"CACTUS"}
@@ -40,6 +45,7 @@ const Home = () => {
             "A cactus is a member of the plant family Cactaceae, a family comprising..."
           }
           img={cactus}
+          alt={"cactus"}
         />
       </div>
     </div>
