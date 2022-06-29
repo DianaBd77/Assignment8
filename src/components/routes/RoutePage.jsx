@@ -1,9 +1,13 @@
 import "../../App.css";
 import "../home/Home.css";
 import "./RoutePage.css";
-import React from "react";
+import React, { useEffect } from "react";
 
 const RoutePage = ({ title, description, img, alt }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="route-page">
       <div className="route-header">

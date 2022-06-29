@@ -6,13 +6,8 @@ import sunflower from "./pic/sunflower.jpg";
 import orchid from "./pic/orchid.jpg";
 import cactus from "./pic/cactus.jpg";
 import headerPic from "./pic/header.jpg";
-import { useNavigate } from "react-router-dom";
-
-
 
 const Home = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="home">
       <div className="home-header">
